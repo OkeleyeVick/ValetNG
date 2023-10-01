@@ -1,0 +1,117 @@
+main {
+	position: relative;
+	flex-grow: 1;
+}
+.v-path-wave {
+	position: absolute;
+	width: 100%;
+	z-index: -2;
+	height: 400px;
+	overflow: hidden;
+	transform: rotateY(0.5turn);
+
+	& svg {
+		height: 100%;
+	}
+}
+.v-services {
+	padding-block: 10rem;
+}
+.v-services .v-title-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+.v-services .v-title-container .v-title {
+	font-weight: 600;
+}
+
+.v-services .v-title-container .v-subcontent {
+	font-size: 0.9rem;
+}
+.v-services .v-grid-cards-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	margin-top: 2rem;
+	padding: 1rem;
+	gap: 2rem;
+
+	@media all and (min-width: 700px) {
+		& {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media all and (min-width: 991px) {
+		& {
+			grid-template-columns: repeat(3, 1fr);
+
+			& .v-each-card-item {
+				aspect-ratio: 1/1;
+			}
+		}
+	}
+
+	& .v-each-card-item {
+		border: 1px solid var(--primary-clr);
+		padding: 2rem 1.5rem 2.5rem;
+		display: flex;
+		border-radius: 0.2rem;
+		flex-direction: column;
+		justify-content: space-between;
+		row-gap: 1.2rem;
+		align-items: start;
+		height: 100%;
+		overflow: hidden;
+		color: var(--text-dark);
+
+		@media all and (hover: hover) {
+			&:hover {
+				background-color: var(--primary-clr-variant-1);
+				border-color: var(--primary-clr-variant-1);
+
+				& .v-card-title {
+					color: var(--primary-clr);
+				}
+			}
+		}
+		& .v-top {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			row-gap: 1.2rem;
+		}
+
+		& .v-card-content {
+			font-size: 0.82rem;
+			text-align: start;
+		}
+		& .v-hidden-read-more {
+			--size: 1.2rem;
+			visibility: hidden;
+			font-size: 0.85rem;
+			translate: 0 1rem;
+			opacity: 0;
+			color: var(--primary-clr);
+			font-weight: 500;
+
+			.v-each-card-item:hover & {
+				opacity: 1;
+				translate: 0 0;
+				visibility: visible;
+			}
+			&:hover {
+				& svg {
+					translate: 10px 0;
+				}
+			}
+
+			& svg {
+				width: var(--size);
+				height: var(--size);
+			}
+		}
+	}
+}
+.v-hero-content {
+	z-index: 1;
+}

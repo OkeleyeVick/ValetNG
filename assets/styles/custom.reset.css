@@ -1,0 +1,49 @@
+@font-face {
+	font-family: Helvetica;
+	src: url("../font/Helvetica.ttf");
+}
+:root {
+	--primary-clr: rgba(116, 35, 36, 1);
+	--primary-clr-light: ;
+	--primary-clr-dark: ;
+	--primary-clr-variant-1: rgba(212, 187, 187, 1);
+	--primary-clr-variant-2: rgba(234, 222, 222, 1);
+	--black: #000;
+	--white: #fff;
+	--text-dark: rgba(0 0 0 / 0.8);
+	--black-bg: #030303;
+}
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialised;
+	image-rendering: optimizeQuality;
+	text-rendering: optimizeLegibility;
+	font-family: Helvetica;
+	font-smooth: always;
+	-webkit-font-smoothing: antialised;
+	-moz-osx-font-smoothing: grayscale;
+	transition: 300ms ease;
+}
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+:is(h1, h2, h3, h4, h5, h6) {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	position: relative;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}

@@ -1,0 +1,137 @@
+main {
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+main > section {
+	scroll-snap-align: center;
+}
+.v-content-wrapper {
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	row-gap: 3rem;
+	margin-block: 4rem 2rem;
+}
+.v-content-container .v-sm-title {
+	color: var(--primary-clr);
+	font-weight: 600;
+}
+.v-content-container .v-title {
+	font-weight: 700;
+}
+.v-image-container {
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.v-content-wrapper .v-subtext {
+	font-size: 0.9rem;
+}
+.v-content-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+.section-one {
+	padding: 1rem;
+}
+.section-two {
+	margin-block: 5rem;
+	padding-block: 2rem;
+
+	.row {
+		row-gap: 2rem;
+	}
+}
+.section-two .v-text-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.2rem;
+}
+.section-two .v-sm-text {
+	color: var(--primary-clr);
+}
+.section-two .v-subtext-content {
+	font-size: 0.9rem;
+}
+.section-two .v-title {
+	font-weight: 700;
+}
+.section-three {
+	background-color: var(--primary-clr-variant-2);
+	padding-block: 2rem 4rem;
+}
+.section-three .v-title {
+	font-weight: 600;
+}
+.section-three .v-grid-cards-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 1.5rem;
+	margin-top: 2rem;
+	padding: 1rem;
+
+	& .v-each-card-item {
+		border: 1px solid var(--primary-clr);
+		padding: 2rem 1.5rem 1.5rem;
+		display: flex;
+		border-radius: 0.2rem;
+		flex-direction: column;
+		row-gap: 1.5rem;
+		align-items: start;
+
+		& .v-card-content {
+			font-size: 0.85rem;
+			text-align: start;
+		}
+	}
+}
+.section-four .row {
+	row-gap: 2rem;
+	padding-block: 4rem;
+
+	.v-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 1rem;
+
+		.v-sm-text {
+			color: var(--primary-clr);
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+		.v-title {
+			font-weight: 600;
+		}
+	}
+	.v-image-container {
+		scale: 0.8;
+		& img {
+			width: 100%;
+		}
+	}
+}
+.section-five {
+	& .v-container-inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2rem;
+		margin-block: 0 5rem;
+
+		& .row {
+			gap: 1.5rem;
+		}
+		.v-each {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1rem;
+
+			.v-title {
+				font-weight: 600;
+				font-size: 1.1rem;
+			}
+		}
+		.v-text-content {
+			font-size: 0.9rem;
+		}
+	}
+}
