@@ -1,0 +1,143 @@
+main {
+	padding-block: 10rem;
+	overflow: hidden;
+}
+.section-one .v-title-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+.section-one .v-title-container .v-title {
+	font-weight: 600;
+}
+
+.section-one .v-title-container .v-subcontent {
+	font-size: 0.96rem;
+}
+.section-two {
+	.row {
+		row-gap: 2rem;
+	}
+}
+
+.v-form-content {
+	position: relative;
+	--shift: 1rem;
+	.v-layer-image {
+		opacity: 0.7;
+		position: absolute;
+		z-index: -1;
+		bottom: calc(var(--shift) * -2);
+		right: calc(var(--shift) * -2);
+	}
+	.v-form {
+		display: flex;
+		background-color: var(--white);
+		position: relative;
+		flex-direction: column;
+		row-gap: 1.5rem;
+		border-radius: 0.3rem;
+		padding: 3rem 2rem;
+		overflow: hidden;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+		@media all and (min-width: 640px) {
+			& {
+				padding: 3rem;
+			}
+		}
+
+		.form-label {
+			font-size: 0.9rem;
+		}
+		.form-control {
+			min-height: 3rem;
+			border-radius: 5px;
+			resize: none;
+
+			&:focus {
+				border-color: var(--primary-clr);
+				box-shadow: 0 0 0 0.25rem rgba(116, 35, 36, 0.25);
+			}
+		}
+
+		.v-submit-btn {
+			background-color: var(--primary-clr);
+			color: var(--white);
+			border-radius: 6px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 3.2rem;
+			border: none;
+			font-size: 0.9rem;
+		}
+	}
+}
+
+.v-contact-content {
+	& * svg {
+		--size: 1.4rem;
+		width: var(--size);
+		height: var(--size);
+	}
+	.v-contact-content-inner {
+		display: flex;
+		flex-direction: column;
+		row-gap: 1rem;
+
+		.v-sm-text {
+			color: var(--primary-clr);
+			font-size: 0.9rem;
+			font-weight: 500;
+		}
+
+		.v-title {
+			font-weight: 600;
+		}
+
+		.v-link {
+			.v-cat {
+				color: var(--text-dark);
+				font-weight: 500;
+				display: flex;
+				align-items: center;
+				gap: 5px;
+
+				&:hover {
+					color: var(--primary-clr);
+				}
+			}
+		}
+	}
+	.v-boxes {
+		margin-top: 2.5rem;
+
+		.v-box {
+			overflow: hidden;
+			border: 1px solid var(--primary-clr-variant-2);
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			border-radius: 8px;
+			margin-top: 1rem;
+
+			&:hover {
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+				.v-box-inner {
+					color: var(--primary-clr);
+				}
+			}
+		}
+		.v-box-inner {
+			padding: 1rem;
+			display: flex;
+			flex-direction: column;
+			background-color: var(--white);
+			align-items: center;
+			color: var(--text-dark);
+			row-gap: 3px;
+			font-size: 0.9rem;
+		}
+	}
+}

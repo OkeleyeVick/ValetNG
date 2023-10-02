@@ -1,3 +1,46 @@
-.container {
-	clip-path: polygon(30% 0%, 100% 0, 100% 30%, 100% 70%, 74% 84%, 22% 81%, 0 91%, 0 0);
+body {
+	position: relative;
+}
+header {
+	position: relative;
+}
+
+.v-hero {
+	height: calc(450px + 6rem);
+	margin-top: -6rem;
+	position: relative;
+
+	.v-main-content {
+		position: relative;
+		isolation: isolate;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--white);
+	}
+}
+.v-title-container {
+	padding-block: 4rem;
+}
+.v-layer-image {
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+
+	.img-fluid {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+.v-location {
+	padding-block: 3rem 5rem;
+	.v-map-container {
+		border-radius: 10px;
+		overflow: hidden;
+	}
+	& iframe {
+		width: 100%;
+	}
 }

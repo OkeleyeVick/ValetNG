@@ -5,6 +5,8 @@ header {
 	width: 100%;
 	background-color: var(--white);
 	z-index: 2;
+	box-shadow: rgba(100, 100, 111, 0.1) 0px 10px 10px -10px;
+
 	& nav {
 		padding-block: 1.5rem;
 	}
@@ -28,6 +30,7 @@ header {
 	}
 	& .v-middle-links a {
 		color: var(--text-dark);
+		text-transform: capitalize;
 		&:hover {
 			color: var(--primary-clr);
 		}
@@ -72,7 +75,7 @@ header {
 		& a {
 			padding: 0.6rem 1rem;
 			font-size: 0.84rem;
-			border: 1px solid var(--primary-clr);
+			border: 1.5px solid var(--primary-clr);
 			border-radius: 4px;
 		}
 	}
@@ -84,7 +87,7 @@ header {
 		justify-content: flex-end;
 
 		& svg {
-			--size: 1.5rem;
+			--size: 2rem;
 			width: var(--size);
 			height: var(--size);
 		}
@@ -104,6 +107,10 @@ header {
 			}
 		}
 
+		&.active::before {
+			background-color: var(--white);
+		}
+
 		& .v-middle-links a {
 			color: var(--white);
 
@@ -112,7 +119,7 @@ header {
 			}
 		}
 		& .v-right-links a {
-			border: 1px solid var(--white);
+			border-color: var(--white);
 		}
 		& .v-mobile-menu {
 			color: var(--white);
@@ -122,6 +129,69 @@ header {
 			&:hover {
 				color: var(--primary-clr);
 				background-color: var(--white);
+			}
+		}
+	}
+
+	&.variant-transparent {
+		background-color: transparent;
+		box-shadow: none;
+
+		.v-middle-links a {
+			color: var(--white) !important;
+			&::before {
+				background-color: var(--white);
+			}
+			&.active::before {
+				background-color: var(--white) !important;
+			}
+		}
+		.v-mobile-menu {
+			color: var(--white);
+		}
+		.v-right-links {
+			.v-quote {
+				background-color: var(--white);
+				color: var(--primary-clr);
+			}
+			.v-contact {
+				background-color: transparent;
+				border: 1.5px solid var(--white);
+			}
+		}
+	}
+}
+.offcanvas {
+	.offcanvas-header {
+		.v-logo {
+			width: 8rem;
+		}
+	}
+	.offcanvas-body {
+		.v-sidebar-container {
+			display: flex;
+			margin-top: 2rem;
+			flex-direction: column;
+			row-gap: 5px;
+			.v-href {
+				color: var(--primary-clr);
+				padding: 0.8rem 1rem;
+				display: flex;
+				align-items: center;
+				gap: 1rem;
+				border-radius: 7px;
+
+				.v-text {
+					font-weight: 500;
+				}
+				&.active {
+					color: var(--white);
+					background-color: var(--primary-clr);
+				}
+				&:not(.active):hover {
+					color: var(--primary-clr);
+					background-color: var(--primary-clr-variant-2);
+				}
 			}
 		}
 	}

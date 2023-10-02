@@ -65,7 +65,7 @@ footer {
 				--white: #ffffffeb;
 				color: var(--white);
 				text-transform: capitalize;
-				font-size: 0.86rem;
+				font-size: 0.83rem;
 
 				&:hover {
 					color: var(--primary-clr);
