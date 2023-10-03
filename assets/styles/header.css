@@ -74,7 +74,6 @@ header {
 		gap: 0.8rem;
 		& a {
 			padding: 0.6rem 1rem;
-			/* font-size: 0.84rem; */
 			border: 1.5px solid var(--primary-clr);
 			border-radius: 4px;
 		}
@@ -93,6 +92,7 @@ header {
 		}
 	}
 	&.variant {
+		box-shadow: none;
 		background-color: var(--primary-clr);
 		& :is(.v-middle-links, .v-right-links) {
 			& a {
