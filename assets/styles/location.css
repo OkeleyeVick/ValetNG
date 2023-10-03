@@ -44,3 +44,8 @@ header {
 		width: 100%;
 	}
 }
+.v-services {
+	.v-title {
+		font-weight: 700;
+	}
+}

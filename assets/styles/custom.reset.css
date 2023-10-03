@@ -3,7 +3,7 @@
 	src: url("../font/Helvetica.ttf");
 }
 :root {
-	--primary-clr: rgba(116, 35, 36, 1);
+	--primary-clr: #742324;
 	--primary-clr-light: ;
 	--primary-clr-dark: ;
 	--primary-clr-variant-1: rgba(212, 187, 187, 1);
