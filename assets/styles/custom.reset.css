@@ -1,6 +1,6 @@
 @font-face {
-	font-family: Helvetica;
-	src: url("../font/Helvetica.ttf");
+	font-family: RedHatDisplay;
+	src: url("../font/RedHatDisplay.ttf");
 }
 :root {
 	--primary-clr: rgb(116, 35, 36);
@@ -21,7 +21,7 @@
 	-webkit-font-smoothing: antialised;
 	image-rendering: optimizeQuality;
 	text-rendering: optimizeLegibility;
-	font-family: Helvetica;
+	font-family: RedHatDisplay;
 	font-smooth: always;
 	-webkit-font-smoothing: antialised;
 	-moz-osx-font-smoothing: grayscale;

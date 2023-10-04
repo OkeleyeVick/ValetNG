@@ -84,6 +84,9 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+		color: var(--text-dark);
+		padding: 8px;
+		border-radius: 50%;
 
 		& svg {
 			--size: 1.4rem;
@@ -123,8 +126,6 @@ header {
 		}
 		& .v-mobile-menu {
 			color: var(--white);
-			padding: 8px;
-			border-radius: 50%;
 
 			&:hover {
 				color: var(--primary-clr);

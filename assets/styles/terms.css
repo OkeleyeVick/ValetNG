@@ -44,14 +44,12 @@ main {
 		display: flex;
 		flex-direction: column;
 	}
-	.v-terms-container {
-		row-gap: 1.5rem;
-	}
 	.v-each-term {
-		row-gap: 0.5rem;
+		margin-bottom: 1.5rem;
 		.v-term-title {
 			font-weight: 600;
 			font-size: 1.3rem;
+			margin-bottom: 0.5rem;
 		}
 		.v-text {
 			font-size: 0.85rem;
