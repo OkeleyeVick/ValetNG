@@ -104,7 +104,7 @@ main > section {
 		.v-each-card {
 			--index: 1;
 
-			@media all and (min-width: px) {
+			@media all and (min-width: 1024px) {
 				.row {
 					margin-inline: 0;
 					margin-right: -30px;
