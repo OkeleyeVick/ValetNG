@@ -7,7 +7,7 @@
 	--primary-clr-light: ;
 	--primary-clr-dark: ;
 	--primary-clr-variant-1: rgba(212, 187, 187, 1);
-	--primary-clr-variant-2: rgba(234, 222, 222, 1);
+	--primary-clr-variant-2: rgba(234, 222, 222, 0.45);
 	--black: #000;
 	--white: #fff;
 	--text-dark: rgba(0 0 0 / 0.8);
@@ -47,4 +47,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	justify-content: space-between;
+}
+span {
+	font-weight: 430;
 }

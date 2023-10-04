@@ -222,7 +222,7 @@
 								<ul class="v-list-item">
 									<li class="v-item">
 										<h6 class="v-title">
-											<span class="v-text"> Choose your event location </span>
+											<div class="v-text">Choose your event location</div>
 										</h6>
 										<span class="v-text-content">
 											Contact us on Instagram <a href="mailto:" class="link-to"> @Valetng_ </a> or simply call us on +2348180107902, let us know your
@@ -231,7 +231,7 @@
 									</li>
 									<li class="v-item">
 										<h6 class="v-title">
-											<span class="v-text"> Pick your date and time </span>
+											<div class="v-text">Pick your date and time</div>
 										</h6>
 										<span class="v-text-content">
 											Reserve your valet service effortlessly, choosing the perfect date and time for your schedule. This guarantees the parking you
@@ -249,10 +249,10 @@
 									</li>
 									<li class="v-item">
 										<h6 class="v-title">
-											<span class="v-text">
-												<span>Additional Services</span>
+											<div class="v-text">
+												<div>Additional Services</div>
 												<small class="v-tab-pill">New </small>
-											</span>
+											</div>
 										</h6>
 										<span class="v-text-content">
 											Looking for that extra touch of pampering? Add on optional services like car washing, detailing, or even a warm welcome with red
@@ -441,7 +441,7 @@
 				</div>
 			</section>
 			<section class="section-six">
-				<div class="v-content-wrapper container-lg px-3 col-md-11 col-lg-9 col-xl-8 mx-auto text-center">
+				<div class="v-content-wrapper container-lg px-3 col-md-11 col-lg-10 col-xl-8 mx-auto text-center">
 					<div class="v-content-container col-11">
 						<small class="v-sm-title v-pill"> FAQs </small>
 						<h2 class="v-title">Got questions?</h2>
@@ -723,11 +723,18 @@
 			(() => {
 				new Splide(".splide", {
 					type: "loop",
-					perPage: 3,
+					perPage: 4,
 					perMove: 1,
 					autoplay: true,
+					rewind: false,
+					arrows: false,
+					pagination: false,
 					padding: "1rem",
+					height: "300px",
 					breakpoints: {
+						991: {
+							perPage: 3,
+						},
 						640: {
 							perPage: 2,
 						},

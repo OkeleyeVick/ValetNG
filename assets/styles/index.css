@@ -95,7 +95,7 @@ main > section {
 	}
 }
 .section-two {
-	margin-block: 3.5rem;
+	margin-block: -2.5rem 3.5rem;
 	padding-block: 2rem;
 
 	.row {
@@ -104,7 +104,7 @@ main > section {
 		.v-each-card {
 			--index: 1;
 
-			@media all and (min-width: 768px) {
+			@media all and (min-width: px) {
 				.row {
 					margin-inline: 0;
 					margin-right: -30px;
@@ -216,7 +216,7 @@ main > section {
 }
 .section-four .row {
 	row-gap: 2rem;
-	padding-block: 5rem;
+	padding-block: 7rem;
 
 	.v-major-title {
 		font-weight: 700;
@@ -442,6 +442,7 @@ main > section {
 	height: 0;
 	opacity: 0;
 	flex-grow: 0;
+	overflow: hidden;
 	transform-origin: top;
 	@media all and (min-width: 991px) {
 		& {
@@ -463,6 +464,7 @@ main > section {
 	overflow: hidden;
 	line-clamp: 3;
 	-webkit-line-clamp: 3;
+	text-wrap: balance;
 	text-overflow: ellipsis;
 }
 .v-accordion .v-accordion-title-container:has(button.active) + .v-accordion-body {
@@ -704,18 +706,17 @@ main > section {
 
 .v-image-outer-container {
 	margin-top: 7rem;
-	clip-path: polygon(0% 23.94%, 49.16% 32.89%, 100% 23.94%, 100% 75.56%, 49.16% 70.26%, 0% 75.81%);
+	clip-path: polygon(0% 1.94%, 49.16% 6.4%, 100% 0.94%, 100% 77.56%, 49.16% 73.85%, 0% 78.81%);
+	height: 380px;
+}
+.splide__track {
+	padding: 0;
 }
 .splide {
+	height: 100%;
 	.v-image-container {
-		aspect-ratio: 16 / 12;
+		height: 100%;
 		margin-right: 1rem;
-		@media screen and (min-width: 768px) {
-			& {
-				aspect-ratio: 16 / 9;
-			}
-		}
-
 		.img-fluid {
 			width: 100%;
 			height: 100%;

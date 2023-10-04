@@ -53,7 +53,7 @@
 		if (translateDown > 100 || translateDown < 0) return;
 
 		steppers.forEach((_, index, stepperArray) => {
-			const calculation = translateDown - 4 >= (100 / steppers.length - 1) * index;
+			const calculation = translateDown - 6 >= (100 / steppers.length - 1) * index;
 			if (calculation) {
 				stepperArray[index].classList.add("active");
 				circleSteppers[index].classList.add("active");
@@ -62,6 +62,6 @@
 				circleSteppers[index].classList.remove("active");
 			}
 		});
-		root.style.setProperty("--translate-down", `${translateDown + 1}%`);
+		root.style.setProperty("--translate-down", `${translateDown}%`);
 	});
 })();
