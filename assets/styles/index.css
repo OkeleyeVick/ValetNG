@@ -277,7 +277,7 @@ main > section {
 				left: 0;
 				top: 0;
 				color: var(--white);
-				font-size: 0.9rem;
+				font-size: 0.8rem;
 				font-weight: 600;
 				translate: calc(var(--shift-left) * -1) 0;
 				border-radius: 50%;
@@ -288,7 +288,7 @@ main > section {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				padding: 1rem;
+				padding: 0.8rem;
 			}
 
 			.v-text {
@@ -311,6 +311,10 @@ main > section {
 	& .row {
 		row-gap: 5rem;
 		padding-block: 2rem;
+
+		@media screen and (max-width: 768px) {
+			padding-block: 5rem;
+		}
 	}
 
 	& .v-container-inner {
@@ -354,6 +358,7 @@ main > section {
 	border-bottom: 1.5px solid rgba(0 0 0 / 30%);
 	position: relative;
 	text-align: start;
+	padding-block: 4px;
 	display: flex;
 	align-items: center;
 	gap: 1rem 0;
@@ -457,14 +462,14 @@ main > section {
 	}
 }
 .v-accordion .v-accordion-body .v-text {
-	font-size: 0.8rem;
+	font-size: 0.85rem;
+	font-weight: 500;
 	display: -moz-box;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	line-clamp: 3;
 	-webkit-line-clamp: 3;
-	text-wrap: balance;
 	text-overflow: ellipsis;
 }
 .v-accordion .v-accordion-title-container:has(button.active) + .v-accordion-body {
@@ -588,7 +593,7 @@ main > section {
 .v-navigation {
 	@media all and (min-width: 991px) {
 		& {
-			height: 100vh;
+			height: 90vh;
 			position: -webkit-sticky;
 			position: sticky;
 			top: 0;
@@ -596,6 +601,7 @@ main > section {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			margin-block-start: auto;
 		}
 	}
 }
