@@ -712,8 +712,15 @@ main > section {
 
 .v-image-outer-container {
 	margin-top: 7rem;
-	clip-path: polygon(0% 1.94%, 49.16% 6.4%, 100% 0.94%, 100% 77.56%, 49.16% 73.85%, 0% 78.81%);
-	height: 380px;
+	clip-path: polygon(0% 2.94%, 49.16% 8.4%, 100% 2.94%, 100% 76.56%, 52.16% 73.85%, 0% 76.81%);
+	/* clip-path: polygon(0% 1.94%, 49.16% 3.4%, 100% 0.94%, 100% 77.56%, 49.16% 75.85%, 0% 78.81%); */
+	height: 300px;
+
+	@media all and (min-width: 640px) {
+		& {
+			height: 380px;
+		}
+	}
 }
 .splide__track {
 	padding: 0;
