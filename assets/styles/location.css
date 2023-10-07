@@ -6,9 +6,9 @@ header {
 }
 
 .v-hero {
-	height: calc(450px + 6rem);
-	margin-top: -6rem;
 	position: relative;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	overflow: hidden;
 
 	.v-main-content {
 		position: relative;
@@ -36,6 +36,7 @@ header {
 .v-layer-image {
 	height: 100%;
 	position: absolute;
+	margin-top: -6rem;
 	z-index: -1;
 
 	.img-fluid {

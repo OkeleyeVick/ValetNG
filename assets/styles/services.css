@@ -8,13 +8,12 @@ main {
 .v-hero {
 	position: relative;
 	overflow: hidden;
+	background-color: var(--primary-clr);
 	height: 60vh;
-
-	@media screen and (min-width: 768px) {
+	/* @media screen and (min-width: 768px) {
 		& {
-			height: 80vh;
 		}
-	}
+	} */
 	.v-main-content {
 		position: relative;
 		isolation: isolate;
@@ -25,7 +24,8 @@ main {
 		color: var(--white);
 
 		.container {
-			margin-top: -7rem;
+			/* margin-top: -7rem; */
+			padding-block: 7rem;
 		}
 		.v-title-container {
 			display: flex;
@@ -67,7 +67,8 @@ main {
 	}
 }
 .v-services {
-	margin-block: 2rem 10rem;
+	margin-block: 0rem 10rem;
+	padding-block: 7rem 0;
 }
 .v-services .v-title-container {
 	display: flex;

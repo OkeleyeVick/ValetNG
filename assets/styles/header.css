@@ -97,6 +97,7 @@ header {
 	&.variant {
 		box-shadow: none;
 		background-color: var(--primary-clr);
+		border-bottom: 1px solid var(--primary-clr);
 		& :is(.v-middle-links, .v-right-links) {
 			& a {
 				&.v-quote {
