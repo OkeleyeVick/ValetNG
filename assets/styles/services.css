@@ -12,7 +12,7 @@ main {
 	height: 40vh;
 	@media screen and (min-width: 768px) {
 		& {
-		    height: 60vh
+		    height: 60vh;
 		}
 	}
 	.v-main-content {
