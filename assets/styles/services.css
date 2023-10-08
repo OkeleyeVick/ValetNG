@@ -12,7 +12,7 @@ main {
 	height: 40vh;
 	@media screen and (min-width: 768px) {
 		& {
-		    height: 60vh;
+			height: 60vh;
 		}
 	}
 	.v-main-content {
@@ -26,53 +26,60 @@ main {
 
 		.container {
 			/* margin-top: -7rem; */
-		@media all and (min-width: 768px){
-			& {
-			   padding-block: 7rem;
+			@media all and (min-width: 768px) {
+				& {
+					padding-block: 7rem;
+				}
 			}
-		}
-		.v-title-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			row-gap: 1rem;
+			.v-title-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				row-gap: 1rem;
 
-			.v-text-content {
-				font-size: 0.9rem;
-			}
-			.v-title {
-				font-weight: 600;
-				font-size: 2rem;
+				.v-text-content {
+					font-size: 0.9rem;
+				}
+				.v-title {
+					font-weight: 600;
+					font-size: 2rem;
 
-				@media all and (min-width: 768px) {
-					& {
-						font-size: 2.5rem;
+					@media all and (min-width: 768px) {
+						& {
+							font-size: 2.5rem;
+						}
 					}
 				}
 			}
 		}
-	}
-	.v-layer-image {
-		position: relative;
-		width: calc(400% + 1.3px);
-	}
-	& svg {
-		position: absolute;
-		height: 450px;
-		transform: rotateY(180deg);
-		color: var(--primary-clr);
-		fill: var(--primary-clr);
+		.v-layer-image {
+			position: relative;
+			width: calc(400% + 1.3px);
+		}
+		& svg {
+			position: absolute;
+			height: 450px;
+			transform: rotateY(180deg);
+			color: var(--primary-clr);
+			fill: var(--primary-clr);
 
-		@media all and (min-width: 768px) {
-			& {
-				height: 500px;
+			@media all and (min-width: 768px) {
+				& {
+					height: 500px;
+				}
 			}
 		}
 	}
 }
 .v-services {
 	margin-block: 0rem 10rem;
-	padding-block: 7rem 0;
+	padding-block: 4rem 0;
+
+	@media all and (min-width: 640px) {
+		& {
+			padding-block: 7rem 0;
+		}
+	}
 }
 .v-services .v-title-container {
 	display: flex;
