@@ -6,9 +6,16 @@ header {
 }
 
 .v-hero {
-	height: calc(450px + 6rem);
+
 	margin-top: -6rem;
+	height: 46vh;
 	position: relative;
+
+	@media all and (min-width: 768px) {
+		& {
+			height: calc(450px + 6rem);
+		}
+	}
 
 	.v-main-content {
 		position: relative;
