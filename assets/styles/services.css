@@ -25,7 +25,7 @@ main {
 		color: var(--white);
 
 		.container {
-			/* margin-top: -7rem; */
+			margin-top: -3rem;
 			@media all and (min-width: 768px) {
 				& {
 					padding-block: 7rem;
