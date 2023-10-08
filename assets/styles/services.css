@@ -9,11 +9,12 @@ main {
 	position: relative;
 	overflow: hidden;
 	background-color: var(--primary-clr);
-	height: 60vh;
-	/* @media screen and (min-width: 768px) {
+	height: 40vh;
+	@media screen and (min-width: 768px) {
 		& {
+		    height: 60vh
 		}
-	} */
+	}
 	.v-main-content {
 		position: relative;
 		isolation: isolate;
@@ -25,7 +26,10 @@ main {
 
 		.container {
 			/* margin-top: -7rem; */
-			padding-block: 7rem;
+		@media all and (min-width: 768px){
+			& {
+			   padding-block: 7rem;
+			}
 		}
 		.v-title-container {
 			display: flex;
