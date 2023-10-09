@@ -245,7 +245,7 @@ main > section {
 			font-size: 1.2rem;
 		}
 		.v-text-content {
-			font-size: 0.9rem;
+			font-size: 0.92rem;
 			.link-to {
 				color: var(--primary-clr);
 				font-weight: 500;
@@ -368,14 +368,15 @@ main > section {
 	text-align: start;
 	padding-block: 4px;
 	display: flex;
-	align-items: center;
+	align-items: start;
 	gap: 1rem 0;
 	transition: 300ms ease;
-	justify-content: space-between;
+	justify-content: space;
 	flex-direction: column;
 
 	@media all and (min-width: 991px) {
 		& {
+			align-items: center;
 			flex-direction: row;
 		}
 	}

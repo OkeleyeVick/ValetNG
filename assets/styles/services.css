@@ -38,7 +38,7 @@ main {
 				row-gap: 1rem;
 
 				.v-text-content {
-					font-size: 0.9rem;
+					font-size: 1rem;
 				}
 				.v-title {
 					font-weight: 600;
@@ -105,7 +105,7 @@ main {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
-	@media all and (min-width: 991px) {
+	@media all and (min-width: 1024px) {
 		& {
 			grid-template-columns: repeat(3, 1fr);
 
@@ -119,7 +119,7 @@ main {
 		border: 1px solid var(--primary-clr);
 		padding: 2rem 1.5rem 2.5rem;
 		display: flex;
-		border-radius: 0.2rem;
+		border-radius: 0.3rem;
 		flex-direction: column;
 		justify-content: space-between;
 		row-gap: 1.2rem;
@@ -146,7 +146,7 @@ main {
 		}
 
 		& .v-card-content {
-			font-size: 0.9rem;
+			font-size: 0.92rem;
 			text-align: start;
 		}
 	}

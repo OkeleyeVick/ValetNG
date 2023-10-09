@@ -109,7 +109,7 @@ main > section {
 		color: var(--text-dark);
 
 		.d-flex {
-			gap: 0.8rem;
+			gap: 0.5rem;
 
 			.v-image {
 				width: 1.5rem;
@@ -168,7 +168,7 @@ main > section {
 			}
 		}
 		.v-text-content {
-			font-size: 0.9rem;
+			font-size: 0.92rem;
 		}
 	}
 }
