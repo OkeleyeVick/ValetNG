@@ -332,14 +332,17 @@ main > section {
 }
 .section-five {
 	background-color: var(--primary-clr-variant-2);
-	padding-block: 2rem;
+	padding-block: 6rem;
 
 	.section-title {
 		margin-block: 0 4rem;
 		text-wrap: balance;
-		@media screen and (min-width: 768px) {
+		@media screen and (min-width: 991px) {
 			& {
 				margin-block: 3rem 0;
+			}
+			.pre-content {
+				margin-bottom: -3rem;
 			}
 		}
 	}
@@ -377,6 +380,12 @@ main > section {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		border-radius: 0.5rem;
+		overflow: hidden;
+
+		& img {
+			width: 100%;
+		}
 	}
 }
 
