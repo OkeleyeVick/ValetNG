@@ -22,6 +22,7 @@ main > section {
 .v-image-container {
 	border-radius: 0.5rem;
 	overflow: hidden;
+	aspect-ratio: 15.6/16;
 }
 .v-content-wrapper .v-subtext {
 	font-size: 0.9rem;
@@ -71,8 +72,20 @@ main > section {
 	font-weight: 700;
 }
 .section-three {
-	background-color: var(--primary-clr-variant-2);
+	background-color: var(--primary-clr);
 	padding-block: 2rem 4rem;
+	isolation: isolate;
+	position: relative;
+
+	.v-layer-image {
+		position: absolute;
+		z-index: -1;
+		inset: 0;
+	}
+	.v-content-wrapper {
+		row-gap: 1rem;
+		color: var(--white);
+	}
 }
 .section-three .v-title {
 	font-weight: 600;
@@ -92,6 +105,16 @@ main > section {
 		flex-direction: column;
 		row-gap: 1.5rem;
 		align-items: start;
+		background-color: var(--white);
+		color: var(--text-dark);
+
+		.d-flex {
+			gap: 0.8rem;
+
+			.v-image {
+				width: 1.5rem;
+			}
+		}
 
 		& .v-card-content {
 			font-size: 0.85rem;

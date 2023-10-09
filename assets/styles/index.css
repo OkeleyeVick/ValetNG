@@ -13,19 +13,13 @@ main > section {
 	flex-direction: column;
 	row-gap: 3rem;
 	padding-block: 5rem 3rem;
+	align-items: center;
 }
 .v-content-container .v-sm-title {
 	color: var(--primary-clr);
 	width: max-content;
 	margin-inline: auto;
 	font-weight: 600;
-
-	&.v-pill {
-		background-color: var(--primary-clr-variant-2);
-		font-size: 0.8rem;
-		padding: 4px 12px;
-		border-radius: 1000px;
-	}
 }
 .v-content-container .v-title {
 	font-weight: 700;
@@ -34,9 +28,9 @@ main > section {
 	border-radius: 0.5rem;
 	overflow: hidden;
 }
-.v-content-wrapper .v-subtext {
+/* .v-content-wrapper .v-subtext {
 	font-size: 0.9rem;
-}
+} */
 .v-content-container {
 	display: flex;
 	flex-direction: column;
@@ -102,9 +96,9 @@ main > section {
 		row-gap: 2rem;
 
 		.v-each-card {
-			--index: 1;
+			/* --index: 1; */
 
-			@media all and (min-width: 1024px) {
+			/* @media all and (min-width: 1024px) {
 				.row {
 					margin-inline: 0;
 					margin-right: -30px;
@@ -118,25 +112,27 @@ main > section {
 				&:nth-child(3) {
 					z-index: calc(var(--index) * -1);
 				}
-			}
+			} */
 		}
 
 		.v-each-card-inner {
 			display: flex;
-			background-color: rgb(254 251 251);
+			/* background-color: rgb(254 251 251); */
 			flex-direction: column;
 			justify-content: space-between;
 			border-radius: 5px;
-			padding: 1.5rem;
-			border: 1px solid var(--primary-clr);
-			row-gap: 3rem;
+			/* padding: 1.5rem; */
+			align-items: flex-start;
+			text-align: start;
+			/* border: 1px solid var(--primary-clr); */
+			row-gap: 1rem;
 			height: 100%;
 
 			@media all and (min-width: 1024px) {
 				& {
-					margin-right: -10px;
+					/* margin-right: -10px;
 					aspect-ratio: 1/0.85;
-					padding: 1.5rem 2rem;
+					padding: 1.5rem 2rem; */
 				}
 			}
 
@@ -145,17 +141,21 @@ main > section {
 				display: flex;
 				flex-direction: column;
 				row-gap: 2rem;
-				justify-content: space-between;
+				justify-content: flex-end;
 				.v-card-text-content {
-					font-size: 0.88rem;
+					font-size: 0.93rem;
 				}
-				& .v-icon-container {
-					& svg {
-						--size: 2.5rem;
-						width: var(--size);
-						height: var(--size);
-						color: var(--primary-clr);
-					}
+			}
+			& .v-icon-container {
+				width: 1.5rem;
+				height: 1.5rem;
+				display: flex;
+				margin-bottom: 5px;
+				& svg {
+					--size: 2rem;
+					width: var(--size);
+					height: var(--size);
+					color: var(--primary-clr);
 				}
 			}
 		}
@@ -177,6 +177,14 @@ main > section {
 
 .section-three .row {
 	row-gap: 3rem;
+}
+.section-three {
+	.v-image-container {
+		aspect-ratio: 16/12;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
 .section-three .v-content {
 	--white: rgba(255 255 255 / 90%);
@@ -370,14 +378,17 @@ main > section {
 		& {
 			flex-direction: row;
 		}
-		& > * {
-			flex-grow: 1;
-		}
 	}
 
 	.v-accordion-title-container {
 		z-index: 1;
 		width: 100%;
+
+		@media all and (min-width: 991px) {
+			& {
+				width: 65%;
+			}
+		}
 
 		& button {
 			display: flex;
@@ -452,11 +463,10 @@ main > section {
 	@media all and (min-width: 991px) {
 		& {
 			transition-duration: 320ms;
-			transform: translateX(-90%);
+			transform: translateX(-75%);
 			visibility: hidden;
 			opacity: 0;
 			height: auto;
-			flex-grow: 1;
 			transform-origin: left;
 		}
 	}
@@ -464,19 +474,20 @@ main > section {
 .v-accordion .v-accordion-body .v-text {
 	font-size: 0.85rem;
 	font-weight: 500;
-	display: -moz-box;
+	text-align: start;
+	text-wrap: wrap;
+	/* display: -moz-box;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	line-clamp: 3;
 	-webkit-line-clamp: 3;
-	text-overflow: ellipsis;
+	text-overflow: ellipsis; */
 }
 .v-accordion .v-accordion-title-container:has(button.active) + .v-accordion-body {
 	padding-block: 0.5rem 0.8rem;
 	display: block;
 	opacity: 1;
-	flex-grow: 1;
 	height: max-content;
 
 	@media all and (min-width: 991px) {
@@ -713,7 +724,6 @@ main > section {
 .v-image-outer-container {
 	margin-top: 7rem;
 	clip-path: polygon(0% 2.94%, 49.16% 8.4%, 100% 2.94%, 100% 76.56%, 52.16% 73.85%, 0% 76.81%);
-	/* clip-path: polygon(0% 1.94%, 49.16% 3.4%, 100% 0.94%, 100% 77.56%, 49.16% 75.85%, 0% 78.81%); */
 	height: 300px;
 
 	@media all and (min-width: 640px) {

@@ -146,33 +146,8 @@ main {
 		}
 
 		& .v-card-content {
-			font-size: 0.82rem;
+			font-size: 0.9rem;
 			text-align: start;
-		}
-		& .v-hidden-read-more {
-			--size: 1.2rem;
-			visibility: hidden;
-			font-size: 0.85rem;
-			translate: 0 1rem;
-			opacity: 0;
-			color: var(--primary-clr);
-			font-weight: 500;
-
-			.v-each-card-item:hover & {
-				opacity: 1;
-				translate: 0 0;
-				visibility: visible;
-			}
-			&:hover {
-				& svg {
-					translate: 10px 0;
-				}
-			}
-
-			& svg {
-				width: var(--size);
-				height: var(--size);
-			}
 		}
 	}
 }

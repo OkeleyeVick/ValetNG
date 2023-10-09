@@ -183,7 +183,7 @@ header {
 				align-items: center;
 				gap: 1rem;
 				font-size: 0.83rem;
-				border-radius: 7px;
+				border-radius: 5px;
 				& svg {
 					--size: 1.3rem;
 					height: var(--size);
