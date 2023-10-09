@@ -53,7 +53,7 @@
 		if (translateDown > 100 || translateDown < 0) return;
 
 		steppers.forEach((_, index, stepperArray) => {
-			const calculation = translateDown - 6 >= (100 / steppers.length - 1) * index;
+			const calculation = translateDown - (6 + index) >= (100 / steppers.length - 1) * index;
 			if (calculation) {
 				stepperArray[index].classList.add("active");
 				circleSteppers[index].classList.add("active");
